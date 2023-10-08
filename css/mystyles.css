@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'waterbrush';
+    src:
+      local('waterbrush'),
+      url("/assets/fonts/WaterBrush-Regular.woff2") format("woff2");
+}
+
+body{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-color: rgb(254, 234, 211);
+color: #000;
+}
+
+.serif {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.waterbrush {
+    font-family: 'waterbrush';
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 1.15;
+    letter-spacing: -.02em;
+    color: rgba(0, 0, 0, 0.8);
+    -webkit-font-smoothing: antialiased;
+    padding-top: 50px;
+}
+
+.figure {
+    position: relative;
+}
+
+.figure img.Sirv.image-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    transition: opacity .2s;
+}
+
+.figure:hover img.Sirv.image-hover {
+    opacity: 1;
+}
+
+.carousel {
+    padding-bottom: 5rem;
+}
+
+.carousel-caption {
+    top:97%;
+}
+
+.carousel-inner {
+    overflow: visible;
+}
+
+.carousel {
+    overflow: hidden;
+}
