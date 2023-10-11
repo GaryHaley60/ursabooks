@@ -51,11 +51,12 @@ color: #000;
 }
 
 .carousel {
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
 }
 
 .carousel-caption {
     top:97%;
+   font-size:.8rem;
 }
 
 .carousel-inner {
