@@ -13,6 +13,16 @@ background-color: rgb(254, 234, 211);
 color: #000;
 }
 
+footer{
+    font-size: smaller;
+    text-align: center;
+/*     position: sticky; */
+/*     height: 50px;
+    margin-top: -50px; */
+    bottom: 0;
+    background-color:rgb(254,234,211);
+}
+
 .serif {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 24px;
