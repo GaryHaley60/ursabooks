@@ -22,6 +22,19 @@ footer{
     bottom: 0;
     background-color:rgb(254,234,211);
 }
+.contactForm{
+    outline: solid 1px black;
+    border-radius: 15px;
+    display: grid;
+    padding: 15px;
+    align-self: center;
+}
+
+.legend{
+    text-align: center;
+
+}
+
 
 .serif {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
