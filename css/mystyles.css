@@ -1,58 +1,56 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'waterbrush';
-    src:
-      local('waterbrush'),
-      url("/assets/fonts/WaterBrush-Regular.woff2") format("woff2");
+    font-family: "waterbrush";
+    src: local("waterbrush"),
+        url("/assets/fonts/WaterBrush-Regular.woff2") format("woff2");
 }
 
-body{
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-background-color: rgb(254, 234, 211);
-color: #000;
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background-color: rgb(254, 234, 211);
+    color: #000;
 }
 
-footer{
+footer {
     font-size: smaller;
     text-align: center;
-/*     position: sticky; */
-/*     height: 50px;
+    /*     position: sticky; */
+    /*     height: 50px;
     margin-top: -50px; */
     bottom: 0;
-    background-color:rgb(254,234,211);
+    /*     background-color:rgb(254,234,211); */
 }
-.contactForm{
+.contactForm {
     outline: solid 1px black;
-    border-radius: 15px;
+    border-radius: 1rem;
     display: grid;
-    padding: 15px;
+    padding: 1rem;
     align-self: center;
 }
 
-.legend{
+.legend {
     text-align: center;
-
 }
 
-
 .serif {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 1.5rem;
     -webkit-font-smoothing: antialiased;
 }
 
 .waterbrush {
-    font-family: 'waterbrush';
+    font-family: "waterbrush";
     text-align: center;
     font-weight: 500;
     font-style: normal;
-    font-size: 60px;
+    font-size: 3.75rem;
     line-height: 1.15;
-    letter-spacing: -.02em;
+    letter-spacing: -0.02em;
     color: rgba(0, 0, 0, 0.8);
     -webkit-font-smoothing: antialiased;
-    padding-top: 50px;
+    padding-top: 3rem;
 }
 
 .figure {
@@ -66,7 +64,7 @@ footer{
     left: 0;
     bottom: 0;
     object-fit: contain;
-    transition: opacity .2s;
+    transition: opacity 0.2s;
 }
 
 .figure:hover img.Sirv.image-hover {
@@ -78,8 +76,8 @@ footer{
 }
 
 .carousel-caption {
-    top:97%;
-   font-size:.8rem;
+    top: 97%;
+    font-size: 0.8rem;
 }
 
 .carousel-inner {
@@ -90,152 +88,6 @@ footer{
     overflow: hidden;
 }
 
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea,
-#contact button[type="submit"] {
-    font: 400 12px/16px 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-#contact {
-    background: #F9F9F9;
-    padding: 25px;
-    margin: 150px 0;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-
-#contact h3 {
-    display: block;
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 10px;
-}
-
-#contact h4 {
-    margin: 5px 0 15px;
-    display: block;
-    font-size: 13px;
-    font-weight: 400;
-}
-
-fieldset {
-    border: medium none !important;
-    margin: 0 0 10px;
-    min-width: 100%;
-    padding: 0;
-    width: 100%;
-}
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea {
-    width: 100%;
-    border: 1px solid #ccc;
-    background: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
-}
-
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact input[type="tel"]:hover,
-#contact input[type="url"]:hover,
-#contact textarea:hover {
-    -webkit-transition: border-color 0.3s ease-in-out;
-    -moz-transition: border-color 0.3s ease-in-out;
-    transition: border-color 0.3s ease-in-out;
-    border: 1px solid #aaa;
-}
-
-#contact textarea {
-    height: 100px;
-    max-width: 100%;
-    resize: none;
-}
-
-#contact button[type="submit"] {
-    cursor: pointer;
-    width: 100%;
-    border: none;
-    background: #4CAF50;
-    color: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
-    font-size: 15px;
-}
-
-#contact button[type="submit"]:hover {
-    background: #43A047;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#contact button[type="submit"]:active {
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
 .copyright {
     text-align: center;
-}
-
-#contact input:focus,
-#contact textarea:focus {
-    outline: 0;
-    border: 1px solid #aaa;
-}
-
-label.error {
-    font-size: 12px;
-    color: red;
-}
-
-#message {
-    resize: vertical;
-}
-
-#form-message-warning,
-#form-message-success {
-    display: none;
-}
-
-#form-message-warning {
-    color: #B90B0B;
-}
-
-#form-message-success {
-    color: #55A44E;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.submitting {
-    float: left;
-    width: 100%;
-    padding: 10px 0;
-    display: none;
-    font-weight: bold;
-    font-size: 12px;
-    color: #000;
-}
-
-::-webkit-input-placeholder {
-    color: #888;
-}
-
-:-moz-placeholder {
-    color: #888;
-}
-
-::-moz-placeholder {
-    color: #888;
-}
-
-:-ms-input-placeholder {
-    color: #888;
 }
