@@ -134,6 +134,11 @@ footer {
     overflow: hidden;
 }
 
+/* .carousel-item {
+    width: clamp(250, 10vw, 390);
+    height: clamp(347, 10vw, 546);
+} */
+
 .copyright {
     text-align: center;
 }

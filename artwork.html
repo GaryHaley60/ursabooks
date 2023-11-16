@@ -19,92 +19,78 @@
         <title>Ursa Books Artwork Page</title>
     </head>
 
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-md navbar-light">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html"
-                        ><img
-                            src="images/UBLogo.png"
-                            width="173"
-                            height="60"
-                            alt="Ursa Books Logo"
-                    /></a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+    <body class="container">
+        <header class="primaryHeader flex">
+            <div href="index.html">
+                <img
+                    src="images/UBLogo.png"
+                    width="173"
+                    height="60"
+                    alt="Ursa Books Logo"
+                />
+            </div>
 
-                    <div
-                        class="collapse navbar-collapse"
-                        id="navbarSupportedContent"
-                    >
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">
-                                    <img
-                                        src="images/Home-goto.png"
-                                        width="75"
-                                        height="40"
-                                        alt="Home Page Button"
-                                    />
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">
-                                    <img
-                                        src="images/About-goto.png"
-                                        width="75"
-                                        height="40"
-                                        alt="About Page Button"
-                                    />
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="books.html"
-                                    ><img
-                                        src="images/Books.png"
-                                        width="123"
-                                        height="40"
-                                        alt="Books Page Button"
-                                /></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html"
-                                    ><img
-                                        src="images/Contact-goto.png"
-                                        width="75"
-                                        height="40"
-                                        alt="Contact Page Button"
-                                /></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <button
+                class="mobile-nav-toggler"
+                aria-controls="primaryNavigation"
+            >
+                <span class="sr-only" aria-expanded="false">Menu</span>
+            </button>
+
+            <nav>
+                <ul
+                    id="primaryNavigation"
+                    data-visible="false"
+                    class="primaryNavigation flex"
+                >
+                    <li>
+                        <a href="index.html">
+                            <img
+                                src="images/Home-goto.png"
+                                width="75"
+                                height="40"
+                                alt="Home Page Button"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <img
+                                src="images/About-goto.png"
+                                width="75"
+                                height="40"
+                                alt="About Page Button"
+                            />
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="books.html"
+                            ><img
+                                src="images/Books.png"
+                                width="123"
+                                height="40"
+                                alt="Books Page Button"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="contact.html"
+                            ><img
+                                src="images/Contact-goto.png"
+                                width="75"
+                                height="40"
+                                alt="Contact Page Button"
+                        /></a>
+                    </li>
+                </ul>
             </nav>
         </header>
 
-        <main class="container-fluid">
-            <section class="jumbotron text-center mt-2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1 class="waterbrush">Our Artwork</h1>
-                            <p>
-                                I want to thank the artists who help me
-                                illustrate my books by displaying the work with
-                                proper credits attached
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <main class="container">
+            <section>
+                <h1 class="waterbrush">Our Artwork</h1>
+                <h6>
+                    I want to thank the artists who help me illustrate my books
+                    by displaying the work with proper credits attached.
+                </h6>
             </section>
 
             <section class="container-fluid">
@@ -177,7 +163,7 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <img
-                                class="d-block mx-auto"
+                                class="d-block mx-auto fluid"
                                 src="images/CoverTapestry.jpg"
                                 alt="Tapestry of the World cover image"
                                 width="390"
@@ -364,6 +350,7 @@
             </div>
         </footer>
 
+        <script src="navigation.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

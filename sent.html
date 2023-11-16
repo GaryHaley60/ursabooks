@@ -1,111 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="Author" content="Gary Haley" />
-		<meta name="description" content="Contact page for Ursa Books, LLC." />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" href="images/TrademarkFavicon.png" type="image/x-icon" />
-		<title>Ursa Books - Contacts</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-			crossorigin="anonymous"
-		/>
-		<link href="css/mystyles.css" rel="stylesheet" />
-		<link href="css/styles.css" rel="stylesheet" />
-	</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="Author" content="Gary Haley" />
+        <meta name="description" content="Contact page for Ursa Books, LLC." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="icon"
+            href="images/TrademarkFavicon.png"
+            type="image/x-icon"
+        />
+        <title>Ursa Books - Contacts</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link href="css/mystyles.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
 
-	<body>
-		<header class="container">
-			<nav class="navbar navbar-expand-md navbar-light">
-				<a class="navbar-brand" href="index.html"
-					><img
-						src="images/UBLogo.png"
-						width="173"
-						height="60"
-						alt="Ursa Books Logo"
-				/></a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link" href="index.html"
-								><img
-									src="images/Home-goto.png"
-									width="75"
-									height="40"
-									alt=""
-								/>
-							</a>
-						</li>
-						<li>
-							<a class="nav-link" href="about.html">
-								<img
-									src="images/About-goto.png"
-									width="75"
-									height="40"
-									alt=""
-								/>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="books.html"
-								><img src="images/Books-goto.png" width="75" height="40" alt=""
-							/></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" href="contact.html"
-								><img src="images/Contact.png" width="123" height="40" alt=""
-							/></a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+    <body>
+        <header class="primaryHeader flex">
+            <div href="index.html">
+                <img
+                    src="images/UBLogo.png"
+                    width="173"
+                    height="60"
+                    alt="Ursa Books Logo"
+                />
+            </div>
 
-		<main class="container">
-			<h1 class="waterbrush">Contact Us</h1>
-			<p class="serif text-center"><em>We'd love to hear from you</em></p>
+            <button
+                class="mobile-nav-toggler"
+                aria-controls="primaryNavigation"
+            >
+                <span class="sr-only" aria-expanded="false">Menu</span>
+            </button>
 
-			<br />
+            <nav>
+                <ul
+                    id="primaryNavigation"
+                    data-visible="false"
+                    class="primaryNavigation flex"
+                >
+                    <li>
+                        <a href="index.html">
+                            <img
+                                src="images/Home-goto.png"
+                                width="75"
+                                height="40"
+                                alt="Home Page Button"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <img
+                                src="images/About-goto.png"
+                                width="75"
+                                height="40"
+                                alt="About Page Button"
+                            />
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="books.html"
+                            ><img
+                                src="images/Books.png"
+                                width="123"
+                                height="40"
+                                alt="Books Page Button"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="contact.html"
+                            ><img
+                                src="images/Contact-goto.png"
+                                width="75"
+                                height="40"
+                                alt="Contact Page Button"
+                        /></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-			<p>Thank you for reaching out to us, we appreciate your comments.</p>
+        <main class="container">
+            <h1 class="waterbrush">Contact Us</h1>
+            <p class="serif text-center"><em>We'd love to hear from you</em></p>
 
-			<br />
-			<br />
-		</main>
+            <br />
 
-		<footer>
-			<hr />
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<p>
-							<img src="images/UBBear.png" height="30" alt="Ursa Books Logo" />
-							Copyright © Ursa Books, LLC 2023. All rights reserved.
-						</p>
-					</div>
-				</div>
-			</div>
-		</footer>
+            <p>
+                Thank you for reaching out to us, we appreciate your comments.
+            </p>
 
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-			crossorigin="anonymous"
-		></script>
-	</body>
+            <br />
+            <br />
+        </main>
+
+        <footer>
+            <hr />
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>
+                            <img
+                                src="images/UBBear.png"
+                                height="30"
+                                alt="Ursa Books Logo"
+                            />
+                            Copyright © Ursa Books, LLC 2023. All rights
+                            reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="navigation.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
