@@ -23,80 +23,84 @@
     </head>
 
     <body>
-        <header class="primaryHeader flex">
-            <div href="index.html">
-                <img
-                    src="images/UBLogo.png"
-                    width="173"
-                    height="60"
-                    alt="Ursa Books Logo"
-                />
-            </div>
-
-            <button
-                class="mobile-nav-toggler"
-                aria-controls="primaryNavigation"
-            >
-                <span class="sr-only" aria-expanded="false">Menu</span>
-            </button>
-
-            <nav>
-                <ul
-                    id="primaryNavigation"
-                    data-visible="false"
-                    class="primaryNavigation flex"
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"
+                    ><img
+                        src="images/UBLogo.png"
+                        width="173"
+                        height="60"
+                        alt="Ursa Books Logo"
+                /></a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
                 >
-                    <li>
-                        <a href="index.html">
-                            <img
-                                src="images/Home-goto.png"
-                                width="75"
-                                height="40"
-                                alt="Home Page Button"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href="about.html">
-                            <img
-                                src="images/About-goto.png"
-                                width="75"
-                                height="40"
-                                alt="About Page Button"
-                            />
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="books.html"
-                            ><img
-                                src="images/Books.png"
-                                width="123"
-                                height="40"
-                                alt="Books Page Button"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href="contact.html"
-                            ><img
-                                src="images/Contact-goto.png"
-                                width="75"
-                                height="40"
-                                alt="Contact Page Button"
-                        /></a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <section class="container pt-5">
-                <div class="row">
-                    <div class="col-md-5 align-self-center">
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <img
+                                    src="images/Home-goto.png"
+                                    width="75"
+                                    height="40"
+                                    alt="Home Page Button"
+                                />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">
+                                <img
+                                    src="images/About-goto.png"
+                                    width="75"
+                                    height="40"
+                                    alt="About Page Button"
+                                />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="books.html"
+                                ><img
+                                    src="images/Books.png"
+                                    width="123"
+                                    height="40"
+                                    alt="Books Page Button"
+                            /></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"
+                                ><img
+                                    src="images/Contact-goto.png"
+                                    width="75"
+                                    height="40"
+                                    alt="Contact Page Button"
+                            /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container pt-5">
+            <section class="row">
+                <div class="col-md-5 align-self-center">
                     <a>
                         <img
                             src="images/TapestryBookCover.png"
                             class="img-fluid"
                             alt="image of the printed book standing up"
                     /></a>
-                    </div>
                 </div>
 
                 <div class="col-md-7">
@@ -139,14 +143,14 @@
                 </div>
             </section>
 
-            <div class="text-center pt-5">
+            <section class="text-center pt-5">
                 <a href="books.html">
                     <button type="button" class="btn btn-lg btn-link">
                         back
                     </button>
                 </a>
-            </div>
-        </div>
+            </section>
+        </main>
 
         <footer>
             <hr />
