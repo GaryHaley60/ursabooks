@@ -9,19 +9,61 @@
 body {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    background-color: rgb(254, 234, 211);
+    background-color: hsl(32, 96%, 91%);
     color: #000;
 }
 
 footer {
     font-size: smaller;
     text-align: center;
+    padding-top: 2rem;
+    bottom: 0;
     /*     position: sticky; */
     /*     height: 50px;
     margin-top: -50px; */
-    bottom: 0;
     /*     background-color:rgb(254,234,211); */
 }
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.d-block {
+    display: block;
+}
+
+/* .flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+}
+
+.flow--space-small {
+    --flow-space: 0.75rem;
+} */
+
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+}
+
 .contactForm {
     outline: solid 1px black;
     border-radius: 1rem;
@@ -36,7 +78,7 @@ footer {
 
 .serif {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 5vw, 2.5rem);
     -webkit-font-smoothing: antialiased;
 }
 
@@ -45,13 +87,15 @@ footer {
     text-align: center;
     font-weight: 500;
     font-style: normal;
-    font-size: 3.75rem;
+    font-size: 2.5rem;
     line-height: 1.15;
     letter-spacing: -0.02em;
     color: rgba(0, 0, 0, 0.8);
     -webkit-font-smoothing: antialiased;
     padding-top: 3rem;
 }
+
+/* Hover figure for the prophesy scroll on the book page */
 
 .figure {
     position: relative;
@@ -70,6 +114,8 @@ footer {
 .figure:hover img.Sirv.image-hover {
     opacity: 1;
 }
+
+/* Carousel control of the artwork page */
 
 .carousel {
     padding-bottom: 7rem;
@@ -90,4 +136,118 @@ footer {
 
 .copyright {
     text-align: center;
+}
+
+/* Start of new mobile nav bar */
+
+.primaryHeader {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primaryNavigation {
+    --gap: clamp(1rem, 5vw, 3rem);
+    padding: 01rem;
+    margin: 0;
+    color: transparent;
+    font-size: 1 rem;
+    background-image: hsl(32 96% 91% / 0.9);
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+    .primaryNavigation {
+        background-image: hsl(32 96% 91% / 0.9);
+        backdrop-filter: blur(1rem);
+    }
+}
+
+.primaryNavigation a {
+    text-decoration: none;
+}
+
+.primaryNavigation a > span {
+    font-weight: 700;
+    margin-right: 0.5em;
+}
+
+.primaryNavigation {
+    margin-block: 2rem;
+}
+
+.mobile-nav-toggler {
+    display: none;
+}
+
+@media (max-width: 43rem) {
+    .primaryNavigation {
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 55%;
+        list-style: none;
+        padding: min(10rem, 10vh) 2rem;
+        margin: 0;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 350ms ease-in-out;
+    }
+
+    .primaryNavigation[data-visible="true"] {
+        transform: translateX(0);
+    }
+
+    .mobile-nav-toggler {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        right: 2rem;
+        top: 2rem;
+        background: transparent;
+        background-image: url("../assets/images/icon-hamburger.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 2rem;
+        aspect-ratio: 1;
+        border: 0;
+    }
+
+    .mobile-nav-toggler[aria-expanded="true"] {
+        background-image: url("../assets/images/icon-close.svg");
+    }
+
+    .mobile-nav-toggler:focus-visible {
+        outline: 5px solid white;
+        outline-offset: 5px;
+    }
+}
+
+@media (min-width: 43em) {
+    .primaryNavigation {
+        padding-inline: clamp(3rem, 7vw, 7rem);
+    }
+}
+
+@media (min-width: 43em) {
+    .primaryNavigation a > span {
+        display: none;
+    }
+}
+
+@media (min-width: 43em) {
+    .waterbrush {
+        font-size: clamp(2.5rem, 7vw, 5rem);
+    }
+    .primaryHeader::after {
+        content: "";
+        display: block;
+        position: relative;
+        height: 1px;
+        width: 100%;
+        margin-right: -2.5rem;
+        background-image: hsl(var(--clr-white) / 0.25);
+        order: 1;
+    }
+}
+
+nav {
+    order: 2;
 }
