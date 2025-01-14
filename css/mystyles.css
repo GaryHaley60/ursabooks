@@ -256,3 +256,15 @@ footer {
 nav {
     order: 2;
 }
+
+.modal-dialog {
+    max-width: 400px; /* Adjust the width as needed */
+}
+
+.modal-body {
+    font-size: 0.875rem; /* Adjust the font size as needed */
+}
+
+.modal-footer .btn {
+    font-size: 0.75rem; /* Adjust the button font size as needed */
+}

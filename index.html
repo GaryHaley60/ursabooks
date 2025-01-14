@@ -19,6 +19,10 @@
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous"
         />
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
 
         <link href="css/mystyles.css" rel="stylesheet" />
     </head>
@@ -92,7 +96,6 @@
                 </div>
             </div>
         </nav>
-        </header>
 
         <div class="container">
             <h1 class="waterbrush">Fantasy stories the way you like to play</h1>
@@ -105,14 +108,51 @@
                 class="img-fluid"
             />
             <hr />
-            <p class="serif text-center">
-                <em><a href="virusc.html">Virus-C</a></em
-                >, my first foray into Urban Fantasy is now listed on Amazon and
-                Barnes&Nobles websites and will be available on December 17,
-                2024.
-            </p>
-            <hr />
         </div>
+
+        <!-- Modal HTML structure  Comment out after one month of being listed-->
+        <!-- <div
+            class="modal fade"
+            id="initialModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="initialModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="initialModalLabel">
+                            Welcome to UrsaBooks
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn Close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center">
+                            <em><a href="books/virusc.html">Virus-C</a></em
+                            >, my first foray into Urban Fantasy is now listed
+                            on Amazon and Barnes&Nobles websites.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
 
         <footer>
             <hr />
@@ -134,10 +174,30 @@
         </footer>
 
         <script src="navigation.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"
         ></script>
+
+        <!-- JavaScript to trigger modal only once per session -->
+        <script>
+            $(document).ready(function () {
+                if (!sessionStorage.getItem("modalShown")) {
+                    $("#initialModal").modal("show");
+                    sessionStorage.setItem("modalShown", "true");
+                }
+                // Close modal on button click
+                $(".Close").click(function () {
+                    $("#initialModal").modal("hide");
+                });
+                $(".btn-secondary").click(function () {
+                    $("#initialModal").modal("hide");
+                });
+            });
+        </script>
     </body>
 </html>
