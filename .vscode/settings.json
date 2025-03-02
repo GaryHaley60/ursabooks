@@ -1,5 +1,5 @@
 {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
-    "cSpell.words": ["DEPLOYPATH", "elmnt", "ursabooks", "xhttp"]
+    "cSpell.words": ["DEPLOYPATH", "elmnt", "Targethref", "ursabooks", "xhttp"]
 }
